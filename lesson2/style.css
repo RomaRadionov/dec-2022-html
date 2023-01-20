@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    border: 0;
     box-sizing: border-box;
 }
 
@@ -10,11 +11,7 @@ html, body{
     scroll-behavior: smooth;
 }
 
-h2{
-    text-align: center;
-}
-
-p{
+h2, p{
     text-align: center;
 }
 
@@ -42,15 +39,20 @@ p{
     flex: 1 1 auto;
     display: flex;
     justify-content: center;
-    /*align-items: center;*/
+    column-gap: 20px;
+    margin: 20px;
     min-height: 100%;
 }
 
 .bloc{
-    display: block;
+    margin: 0;
     height: inherit;
     padding: 20px;
     width: 100%;
+}
+
+.bloc:nth-child(1){
+    flex-direction: column;
 }
 
 .contact{

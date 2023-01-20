@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrap{
+    width: 100%;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    background: darkorange;
+}
+
+.m-20{
+    margin: 20px;
+}
+
+.main{
+    background: darkorange;
+}

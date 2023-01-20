@@ -15,9 +15,6 @@ html, body{
     flex-direction: column;
 }
 
-.header{
-}
-
 .m-20{
     display: flex;
     justify-content: center;
@@ -27,18 +24,22 @@ html, body{
     height: 150px;
 }
 
+.header{
+    margin: 20px 20px 0;
+}
+
 .main{
     flex: 1 1 auto;
     display: flex;
     justify-content: center;
-    align-items: center;
+    /*align-items: center;*/
+    min-height: 100%;
 }
 
 .bloc{
     display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    min-height: 100%;
+    height: inherit;
+    width: 100%;
 }
 
 .contact{

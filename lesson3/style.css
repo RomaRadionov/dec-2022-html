@@ -15,15 +15,37 @@ html, body{
     display: flex;
     justify-content: center;
     align-items: center;
+    column-gap: 30px;
+    padding: 100px;
 }
 
 .box{
+    position: relative;
     width: 300px;
-    border: 2px solid black;
+    border: 2px solid grey;
     padding: 60px 40px 40px;
     align-items: center;
     display: flex;
     flex-direction: column;
+}
+
+.box-item{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: -55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border: 2px solid grey;
+    padding: 10px;
+    border-radius: 100%;
+}
+
+.box-item i{
+    font-size: 30px;
+    color: orange;
 }
 
 .box-header{
@@ -39,7 +61,7 @@ p{
 
 .submit{
     width: 200px;
-    border: 2px solid black;
+    border: 2px solid grey;
     padding: 15px 30px;
     text-align: center;
 }

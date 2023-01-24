@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+.wrap{
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    width: 300px;
+    border: 2px solid black;
+    padding: 60px 40px 40px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.box-header{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+    line-height: 1.8;
+    padding: 30px 0;
+    color: gray;
+}
+
+.submit{
+    width: 200px;
+    border: 2px solid black;
+    padding: 15px 30px;
+    text-align: center;
+}

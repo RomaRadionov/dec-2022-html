@@ -39,8 +39,6 @@ html, body{
 }
 
 .header-search{
-    display: flex;
-    float: right;
     cursor: pointer;
     margin: 10px;
 }

@@ -36,6 +36,7 @@ html, body{
     border-radius: 8px;
     display: flex;
     margin-right: auto;
+    cursor: pointer;
 }
 
 .header-search{

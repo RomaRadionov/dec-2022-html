@@ -4,18 +4,13 @@
     }
     .main-nav{
         position: absolute;
-        transition: all 0.5s;
-        right: -100%;
-    }
-    #check:not(:checked) ~ .main-nav{
-        position: absolute;
-        /*display: block;*/
-        right: -100%;
-    }
-    .main #check:checked ~ .main-nav {
-        position: absolute;
-        /*display: block;*/
+        display: none;
+        top: 0;
         right: 0;
+        width: 100%;
+    }
+    #check:checked ~ .main-nav{
+        display: block;
     }
     .main-intro{
         width: 100%;
@@ -35,13 +30,9 @@
         grid-template-columns: 1fr 1fr;
         width: 100%;
         flex-direction: row;
-        /*flex-wrap: wrap;*/
         border: 0;
         border-top: 1px solid white;
         padding: 10px 0 0;
-    }
-    .main-tools-item{
-        /*width: 48%;*/
     }
     .main-nav-item:nth-child(1),
     .main-tools-item:nth-child(1){

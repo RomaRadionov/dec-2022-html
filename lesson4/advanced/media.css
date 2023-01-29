@@ -1,18 +1,30 @@
 @media screen and (max-width: 768px) {
+    .header-menu-btn{
+        display: block;
+    }
     .main-nav{
-           display: none;
+        position: absolute;
+        transition: all 0.5s;
+        right: -100%;
+    }
+    #check:not(:checked) ~ .main-nav{
+        position: absolute;
+        /*display: block;*/
+        right: -100%;
+    }
+    .main #check:checked ~ .main-nav {
+        position: absolute;
+        /*display: block;*/
+        right: 0;
     }
     .main-intro{
         width: 100%;
         padding: 0;
     }
     .main-card{
-        flex-wrap: wrap;
-        row-gap: 20px;
+        grid-template-columns: 1fr 1fr;
     }
-    .main-card-item{
-        width: 48%;
-    }
+
     .main-box{
         flex-direction: column;
     }
@@ -20,15 +32,16 @@
         width: 100%;
     }
     .main-tools{
+        grid-template-columns: 1fr 1fr;
         width: 100%;
         flex-direction: row;
-        flex-wrap: wrap;
+        /*flex-wrap: wrap;*/
         border: 0;
         border-top: 1px solid white;
         padding: 10px 0 0;
     }
     .main-tools-item{
-        width: 48%;
+        /*width: 48%;*/
     }
     .main-nav-item:nth-child(1),
     .main-tools-item:nth-child(1){
@@ -36,8 +49,29 @@
     }
 }
 
-@media screen and (max-width: 597px){
-    .main-card-item, .main-tools-item{
-        width: 47%;
+@media screen and (max-width: 576px){
+    .header{
+        padding: 20px;
+    }
+    .main-card{
+        grid-template-columns: 1fr;
+    }
+    .main-menu-row{
+        flex-direction: column;
+    }
+    .main-menu-item{
+        width: 100%;
+    }
+    .main-tools{
+        grid-template-columns: 1fr;
+    }
+    .main-menu-pagination a{
+        padding: 4px 8px;
+    }
+}
+
+@media screen and (max-width: 414px){
+    .header{
+        padding: 20px;
     }
 }

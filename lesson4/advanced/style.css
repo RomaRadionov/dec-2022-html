@@ -51,6 +51,31 @@ html, body{
     color: white;
 }
 
+.header-menu-btn{
+    display: none;
+    cursor: pointer;
+}
+
+.header-search-check{
+    display: flex;
+}
+
+#check {
+    display: none;
+}
+
+/*#check:checked ~ .main-nav {*/
+/*    position: absolute;*/
+/*    !*display: block;*!*/
+/*    right: 0;*/
+/*}*/
+
+/*#check:not(:checked) ~ .main-nav{*/
+/*    position: absolute;*/
+/*    !*display: block;*!*/
+/*    right: -100%;*/
+/*}*/
+
 .header-search i{
     transition: 0.5s ease-out;
 }
@@ -63,10 +88,39 @@ html, body{
 
 /*-----2 nav-----*/
 .main{
+    position: relative;
     width: 100%;
     display: flex;
     flex: 1 1 auto;
     padding-top: 20px;
+}
+
+.main-nav-links{
+    list-style: none;
+    text-align: center;
+}
+
+.main-nav-links li{
+    background: darkorange;
+    border-radius: 8px;
+    margin: 15px 0;
+    padding: 5px 0;
+    cursor: pointer;
+}
+
+.main-nav-links li a {
+    color: black;
+    font-weight: 900;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 0.3s linear 0s;
+    text-transform: uppercase;
+}
+
+.main-nav-links li a:hover {
+    color: white;
+    padding-bottom: 7px;
+    border-bottom: 2px solid cornflowerblue;
 }
 
 .main-nav-item{
@@ -76,14 +130,16 @@ html, body{
     border-radius: 8px;
     cursor: pointer;
     padding: 10px;
+    text-align: center;
 }
 
-.main-nav-item:nth-child(1),
+.main-nav-links li:nth-child(1),
 .main-tools-item:nth-child(1){
     margin-top: 0;
 }
 
 .main-nav{
+    position: relative;
     width: calc(100vw / 5);
     background: black;
     padding: 20px;
@@ -96,7 +152,7 @@ html, body{
     display: flex;
     flex-direction: column;
     row-gap: 20px;
-    width: calc((100vw / 5)*4);
+    width: 80%;
     height: 100%;
     padding: 0 0 0 20px;
 }
@@ -119,14 +175,17 @@ html, body{
 /*-----4 card-----*/
 .main-card{
     width: 100%;
-    display: flex;
+    /*display: flex;*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 20px;
+    row-gap: 20px;
     background: black;
     padding: 20px;
 }
 
 .main-card-item{
-    width: 25%;
+    /*width: 25%;*/
     min-height: 120px;
     background: darkorange;
     border-radius: 8px;
@@ -145,11 +204,11 @@ html, body{
 }
 
 .main-menu{
+    width: calc((100vw / 5)*4);
     display: flex;
     flex-direction: column;
     row-gap: 20px;
     column-gap: 20px;
-    width: calc((100vw / 5)*4);
 }
 
 .main-menu-row{
@@ -195,8 +254,10 @@ html, body{
 /*-----6 tools-----*/
 .main-tools{
     width: calc(100vw / 5);
-    display: flex;
-    flex-direction: column;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    display: grid;
+    grid-template-columns: 1fr;
     column-gap: 20px;
     background: black;
     padding-left: 20px;

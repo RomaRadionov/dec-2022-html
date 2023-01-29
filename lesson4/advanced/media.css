@@ -1,0 +1,37 @@
+@media screen and (max-width: 768px) {
+    .main-nav{
+           display: none;
+    }
+    .main-intro{
+        width: 100%;
+        padding: 0;
+    }
+    .main-card{
+        flex-wrap: wrap;
+        row-gap: 20px;
+    }
+    .main-card-item{
+        width: 48%;
+    }
+    .main-box{
+        flex-direction: column;
+    }
+    .main-menu{
+        width: 100%;
+    }
+    .main-tools{
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        border: 0;
+        border-top: 1px solid white;
+        padding: 10px 0 0;
+    }
+    .main-tools-item{
+        width: 48%;
+    }
+    .main-nav-item:nth-child(1),
+    .main-tools-item:nth-child(1){
+        margin-top: 10px;
+    }
+}

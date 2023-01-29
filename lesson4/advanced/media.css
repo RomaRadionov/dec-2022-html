@@ -35,3 +35,9 @@
         margin-top: 10px;
     }
 }
+
+@media screen and (max-width: 597px){
+    .main-card-item, .main-tools-item{
+        width: 47%;
+    }
+}
